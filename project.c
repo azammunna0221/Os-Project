@@ -13,8 +13,19 @@ int main()
     {
         printf("\t Enter burst time p%d:- ",i+1);
         scanf("%d",&b_t[i]);
-        printf("\t Enter arrival time p%d:- ",i+1);
-        scanf("%d",&ar_t[i]);
+       // printf("\t Enter arrival time p%d:- ",i+1);
+       // scanf("%d",&ar_t[i]);
+    }
+    lab_el:
+    for(i=0; i<n; i++)
+    {
+        printf("\t Enter Arrival time p%d:- ", i+1);
+        scanf("\t%d",&ar_t[i]);
+        if(ar_t[i]==0)
+        {
+            printf("sorry!! Zero is not valid");
+            goto lab_el;
+        }
     }
 
 
